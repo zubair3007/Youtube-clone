@@ -1,7 +1,8 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+
 import { Stack, Box } from "@mui/material";
 
-import { ChannelCard, VideoCard } from "./";
+import { ChannelCard, Loader, VideoCard } from ".";
 
 const Videos = ({ videos, direction }) => {
   if (!videos?.length) return <Loader />;
@@ -23,5 +24,6 @@ const Videos = ({ videos, direction }) => {
     </Stack>
   );
 };
+
 
 export default Videos;
